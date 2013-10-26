@@ -7,7 +7,10 @@ set t_Co=256
 
 " Colors I like!
 colorscheme molokai
-" Koehler, Zenburn, Evening, Wombat, Inkpot, Jellybeans, molokai
+" Koehler, Zenburn, Evening, Wombat, Inkpot, Jellybeans, molokai, vividchalk
+
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
 
 " fix paren highlighting
 hi MatchParen cterm=bold ctermbg=none ctermfg=31

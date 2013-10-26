@@ -1,0 +1,11 @@
+[alias]
+	s = status
+	a = add -A
+	m = 
+	ca = commit -a -m
+	c = commit -m
+	d = diff
+	co = checkout
+	cob = checkout -b
+[color]
+	ui = true

@@ -1,0 +1,9 @@
+Ctrl-a
+Ctrl-
+
+ontrol + a
+set -g prefix C-a
+# bind 'C-a C-a' to type 'C-a'
+bind C-a send-prefix
+unbind C-b
+

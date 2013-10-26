@@ -1,8 +1,8 @@
 
 
 " nerdtree
-" Ctrl-P to Display the file browser tree
-nmap <C-P> :NERDTreeTabsToggle<CR>
+" Ctrl-o to Display the file browser tree
+nmap <C-o> :NERDTreeTabsToggle<CR>
 " ,p to show current file in the tree
 nmap <leader>p :NERDTreeFind<CR>
 
@@ -15,6 +15,8 @@ vmap <leader>/ :call NERDComment(0, "invert")<cr>
 "
 let g:ctrlp_map = '<leader>,'
 let g:ctrlp_cmd = 'CtrlP'
+
+nmap <C-p> :CtrlP<CR>
 
 nmap <leader>. :CtrlPClearCache<cr>:CtrlP<cr>
 nmap <leader>l :CtrlPLine<cr>

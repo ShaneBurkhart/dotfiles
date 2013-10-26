@@ -9,7 +9,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
@@ -44,6 +44,8 @@ Bundle 'nono/vim-handlebars'
 
 " markdown
 Bundle 'plasticboy/vim-markdown'
+
+Bundle 'tpope/vim-vividchalk'
 
 
 "Bundle 'tpope/vim-fugitive'
