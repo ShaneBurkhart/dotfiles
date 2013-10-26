@@ -18,7 +18,12 @@ let g:ctrlp_cmd = 'CtrlP'
 
 nmap <C-p> :CtrlP<CR>
 
-nmap <leader>. :CtrlPClearCache<cr>:CtrlP<cr>
+
+nmalp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-v>', '<2-LeftMouse>'],
+    \ 'AcceptSelection("v")': ['<cr>', '<RightMouse>'],
+    \ }
+
 nmap <leader>l :CtrlPLine<cr>
 nmap <leader>b :CtrlPBuff<cr>
 nmap <leader>m :CtrlPBufTag<cr>
