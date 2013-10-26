@@ -4,7 +4,7 @@
 " Ctrl-o to Display the file browser tree
 nmap <C-o> :NERDTreeTabsToggle<CR>
 " ,p to show current file in the tree
-nmap <leader>p :NERDTreeFind<CR>
+nmap <leader>p :NERDTreeTabsToggle<CR>
 
 " nerdcommenter
 " ,/ to invert comment on the current line/selection
@@ -19,7 +19,7 @@ let g:ctrlp_cmd = 'CtrlP'
 nmap <C-p> :CtrlP<CR>
 
 
-nmalp_prompt_mappings = {
+let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-v>', '<2-LeftMouse>'],
     \ 'AcceptSelection("v")': ['<cr>', '<RightMouse>'],
     \ }

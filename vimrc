@@ -46,10 +46,10 @@ inoremap jj <Esc>
 let mapleader = ","
 
 " Easier split tab switching
-nnoremap H <C-w>h
-nnoremap J <C-w>j
-nnoremap K <C-w>k
-nnoremap L <C-w>l
+nnoremap H <C-w>j
+nnoremap J <C-w>h
+nnoremap K <C-w>l
+nnoremap L <C-w>k
 
 " Strip trailing whitespace on save:
 fun! <SID>StripTrailingWhitespaces()
@@ -66,4 +66,3 @@ set directory=./.backup,/tmp
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 source ~/.vim/plugins.vim " Load plugin config
-
