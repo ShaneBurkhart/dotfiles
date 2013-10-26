@@ -9,3 +9,6 @@
 	cob = checkout -b
 [color]
 	ui = true
+[user]
+	name = Shane Burkhart
+	email = shaneburkhart@gmail.com
