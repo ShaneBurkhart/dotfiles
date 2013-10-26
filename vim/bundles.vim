@@ -47,8 +47,11 @@ Bundle 'plasticboy/vim-markdown'
 
 Bundle 'tpope/vim-vividchalk'
 
+Bundle 'tpope/vim-fugitive'
 
-"Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+
+"
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
