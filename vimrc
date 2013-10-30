@@ -64,6 +64,7 @@ set backupdir=./.backup,/tmp
 set directory=./.backup,/tmp
 
 set nofoldenable    " disable folding"
+let g:vim_markdown_folding_disabled=1
 
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
