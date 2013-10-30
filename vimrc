@@ -63,6 +63,9 @@ endfun
 set backupdir=./.backup,/tmp
 set directory=./.backup,/tmp
 
+set nofoldenable    " disable folding"
+
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 source ~/.vim/plugins.vim " Load plugin config
+
