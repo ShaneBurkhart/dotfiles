@@ -68,7 +68,7 @@ let g:vim_markdown_folding_disabled=1
 
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
-autocmd FileType md setlocal linebreak
+autocmd BufNewFile,BufRead *.md setlocal linebreak
 
 source ~/.vim/plugins.vim " Load plugin config
 
