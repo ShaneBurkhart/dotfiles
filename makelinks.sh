@@ -11,8 +11,7 @@
 dir=~/dotfiles                              # Dotfiles directory
 olddir=~/dotfiles_old                       # Old dotfiles backup directory
 regex_exclude="(\.|\.\.|\.sh|\.md)$"        # Files to exclude
-files=$(ls -1 | egrep -v "$regex_exclude")  # List of files/folders to symlink in homedir
-echo $files
+files=$(ls -1 | egrep -v "$regex_exclude" | egrep -v "^\.")  # List of files/folders to symlink in homedir
 
 ##########
 

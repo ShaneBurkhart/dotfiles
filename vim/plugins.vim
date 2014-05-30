@@ -1,27 +1,23 @@
+ "Nerdcommenter
+" <comma><space> to invert comment on the current line/selection
+nmap <leader><space> :call NERDComment(0, "invert")<cr>
+vmap <leader><space> :call NERDComment(0, "invert")<cr>
 
-
-" nerdtree
-" Ctrl-o to Display the file browser tree
-nmap <C-o> :NERDTreeTabsToggle<CR>
-" ,p to show current file in the tree
-nmap <leader>p :NERDTreeTabsToggle<CR>
-
-" nerdcommenter
-" ,/ to invert comment on the current line/selection
-nmap <leader>/ :call NERDComment(0, "invert")<cr>
-vmap <leader>/ :call NERDComment(0, "invert")<cr>
-
-" command-t
-"
+" CtrlP
+" <comma><comma> opens search
 let g:ctrlp_map = '<leader>,'
 let g:ctrlp_cmd = 'CtrlP'
-
-nmap <C-p> :CtrlP<CR>
 
 
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-v>', '<2-LeftMouse>'],
     \ 'AcceptSelection("v")': ['<cr>', '<RightMouse>'],
+    \ }
+
+" Ignore some folders and files for CtrlP indexing
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$',
+    \ 'file': '\.so$\|\.dat$|\.DS_Store|\.pyc$'
     \ }
 
 nmap <leader>l :CtrlPLine<cr>
@@ -36,13 +32,9 @@ cal ctrlp#clra()
 
 let g:ctrlp_max_height = 40
 
-" show on top
-"let g:ctrlp_match_window_bottom = 0
-"let g:ctrlp_match_window_reversed = 0
-
 
 " Rspec.vim mappings
-map <leader>t :call RunCurrentSpecFile()<CR>
-map <leader>s :call RunNearestSpec()<CR>
-map <leader>l :call RunLastSpec()<CR>
-map <leader>a :call RunAllSpecs()<CR>
+" map <leader>t :call RunCurrentSpecFile()<CR>
+" map <leader>s :call RunNearestSpec()<CR>
+" map <leader>l :call RunLastSpec()<CR>
+" map <leader>a :call RunAllSpecs()<CR>

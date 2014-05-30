@@ -1,14 +1,14 @@
 [alias]
 	s = status
 	a = add -A
-	m = 
 	ca = commit -a -m
 	c = commit -m
 	d = diff
+        b = branch
 	co = checkout
 	cob = checkout -b
 [color]
-	ui = true
+	ui = auto
 [user]
 	name = Shane Burkhart
 	email = shaneburkhart@gmail.com

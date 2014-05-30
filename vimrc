@@ -1,4 +1,3 @@
-
 source ~/.vim/bundles.vim " Load bundles
 
 " Junk for allowing 256 colors
@@ -7,17 +6,21 @@ set t_Co=256
 
 " Colors I like!
 colorscheme molokai
-" Koehler, Zenburn, Evening, Wombat, Inkpot, Jellybeans, molokai
 
-highlight Normal ctermbg=NONE
-highlight nonText ctermbg=NONE
+" Makes the background of noText and Normal to terminal
+hi Normal ctermbg=NONE
+hi nonText ctermbg=NONE
 
 " fix paren highlighting
 hi MatchParen cterm=bold ctermbg=none ctermfg=31
 
 " Junk to set up the autoindent!
-set softtabstop=2
-set shiftwidth=2
+" === MINE ===
+"set softtabstop=4
+"set shiftwidth=4
+" === YELP ===
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 filetype indent on
 
@@ -33,14 +36,14 @@ set sidescrolloff=5
 set scrolloff=5
 
 " Random Settings
-set showcmd
-set showmode
+set showcmd     " Command in the bottom of screen
+set showmode    " Show current mode
 set number      " line numbers
 
 " Remap paste to take line indent into account
 nore p ]p
 
-" Remap jj to escape out of insert mode!  Wonderful!
+" Remap jj to escape out of insert mode!
 inoremap jj <Esc>
 " Remap jJ to escape out of insert mode!  Always messing that shit up.
 inoremap jJ <Esc>
@@ -68,11 +71,15 @@ set directory=./.backup,/tmp
 set nofoldenable    " disable folding"
 let g:vim_markdown_folding_disabled=1
 
-autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+" Actually call Stripe Whitespace function on pre write
+au FileType * au BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
+" Go syntax highlighting for go files
 au BufRead,BufNewFile *.go set filetype=go
 
-autocmd BufNewFile,BufRead *.md setlocal linebreak
+" Line break for text wrapping on Markdown files
+au BufNewFile,BufRead *.md setlocal linebreak
 
-source ~/.vim/plugins.vim " Load plugin config
+" Load plugin config
+source ~/.vim/plugins.vim
 
