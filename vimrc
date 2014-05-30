@@ -70,8 +70,10 @@ function! Tab_Or_Complete()
   endif
 endfunction
 
+" Autocomplete code
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 set dictionary="/usr/dict/words"
+set complete-=i
 
 " Strip trailing whitespace on save:
 fun! <SID>StripTrailingWhitespaces()
