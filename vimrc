@@ -16,11 +16,11 @@ hi MatchParen cterm=bold ctermbg=none ctermfg=31
 
 " Junk to set up the autoindent!
 " === MINE ===
+set softtabstop=2
+set shiftwidth=2
+" === YELP ===
 "set softtabstop=4
 "set shiftwidth=4
-" === YELP ===
-set softtabstop=4
-set shiftwidth=4
 set expandtab
 filetype indent on
 
@@ -55,6 +55,17 @@ nnoremap H <C-w>j
 nnoremap J <C-w>h
 nnoremap K <C-w>l
 nnoremap L <C-w>k
+
+function! Tab_Or_Complete()
+  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+    return "\<C-N>"
+  else
+    return "\<Tab>"
+  endif
+endfunction
+
+inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+set dictionary="/usr/dict/words"
 
 " Strip trailing whitespace on save:
 fun! <SID>StripTrailingWhitespaces()
