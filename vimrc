@@ -51,6 +51,9 @@ inoremap jj <Esc>
 " Remap jJ to escape out of insert mode!  Always messing that shit up.
 inoremap jJ <Esc>
 
+" Jump back with <ctrl><[>
+nnoremap <C-[> <C-t>
+
 let mapleader = ","
 
 " Easier split tab switching
