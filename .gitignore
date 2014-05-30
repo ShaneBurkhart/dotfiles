@@ -1,3 +1,4 @@
 # ignore installed bundles
 /vim/bundle
 /vim/bundle/*
+/vim/.*
