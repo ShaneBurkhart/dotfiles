@@ -24,6 +24,9 @@ set shiftwidth=2
 set expandtab
 filetype indent on
 
+" === YELP ===
+" set tags=./tags;/
+
 " Allows autocompletion of vim commands if you press tab
 set wildmenu
 set wildmode=list:longest,full
