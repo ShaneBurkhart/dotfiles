@@ -1,79 +1,82 @@
-
-" Bundles
-
+" Plugins
 
 set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim.git'
 
-" My Bundles here:
-"
-" original repos on github
-"
 
-" file tree
-Bundle 'scrooloose/nerdtree'
+" ======= MY PLUGINS ==============
 
-" commenting
-Bundle 'scrooloose/nerdcommenter'
+" ======== File Management =========
+" Search for files -- <comma><comma> -- Have to set that up
+Plugin 'kien/ctrlp.vim'
 
-" fuzzy file open
-Bundle 'kien/ctrlp.vim'
 
-" manipulation of surrounding parens, quotes, etc.
-Bundle 'tpope/vim-surround'
+" ======== Autocomplete =========
+" Smart commenting -- <comma><c><space> toggles comments
+Plugin 'scrooloose/nerdcommenter'
 
-" Nerdtree tab management
-Bundle 'jistr/vim-nerdtree-tabs'
+" Manipulate surrounding braces, etc. -- Basic: <c><s><to-change><change-to> -- Look that shit up
+Plugin 'tpope/vim-surround'
 
-" Auto insert `end` in ruby
-Bundle 'tpope/vim-endwise'
+" Autocompletes Ruby with 'end'
+Plugin 'tpope/vim-endwise'
 
-" Auto close brackets, etc
-Bundle 'Raimondi/delimitMate'
+" Auto close braces, etc.
+Plugin 'Raimondi/delimitMate'
 
-Bundle 'thoughtbot/vim-rspec'
 
+" ======= Version Control =========
+" Adds line diffs to gutter
+Plugin 'airblade/vim-gitgutter'
+
+
+" ======== Syntax Specific =========
 " handlebars syntax highlighting
-Bundle 'nono/vim-handlebars'
+Plugin 'nono/vim-handlebars'
 
 " markdown
-Bundle 'plasticboy/vim-markdown'
+Plugin 'plasticboy/vim-markdown'
 
-Bundle 'tpope/vim-vividchalk'
-
-Bundle 'tpope/vim-fugitive'
-
-Bundle 'airblade/vim-gitgutter'
-
-"
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-rails.git'
-" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (ie. when working on your own plugin)
-"Bundle 'file:///Users/gmarik/path/to/plugin'
-" ...
-
+call vundle#end()
 filetype plugin indent on     " required!
-"
+
+" Unused Plugin Pool:
+  " File tree similar to Sublime explorer
+  " Plugin 'scrooloose/nerdtree'
+  "
+  " Nerdtree tab management -- Should go with Nerdtree
+  " Plugin 'jistr/vim-nerdtree-tabs'
+  "
+  " Git commands from Vim command line
+  " Plugin 'tpope/vim-fugitive'
+  "
+  " Fash key strokes but can't use because control p
+  " Plugin 'Lokaltog/vim-easymotion'
+  "
+  " HTML autocomplete based on CSS selectors -- Would be nice if didn't use
+  " templating language
+  " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+  "
+  " Rails helpers -- Kind of like Git Fugitive for Rails -- Keeping for Rails
+  " Plugin 'tpope/vim-rails.git'
+
+
+
+" ==============  HELP!!!  ========================
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" NOTE: comments after Plugin command are not allowed..
 
 

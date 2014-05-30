@@ -7,7 +7,7 @@ set t_Co=256
 
 " Colors I like!
 colorscheme molokai
-" Koehler, Zenburn, Evening, Wombat, Inkpot, Jellybeans, molokai, vividchalk
+" Koehler, Zenburn, Evening, Wombat, Inkpot, Jellybeans, molokai
 
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
@@ -42,6 +42,8 @@ nore p ]p
 
 " Remap jj to escape out of insert mode!  Wonderful!
 inoremap jj <Esc>
+" Remap jJ to escape out of insert mode!  Always messing that shit up.
+inoremap jJ <Esc>
 
 let mapleader = ","
 
