@@ -15,6 +15,11 @@ files=$(ls -1 | egrep -v "$regex_exclude" | egrep -v "^\.")  # List of files/fol
 
 ##########
 
+# Little logging
+echo "========== Files to Link ============="
+echo $files
+echo "======================================"
+
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~..."
 mkdir -p $olddir
@@ -28,11 +33,9 @@ echo "done"
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 echo "Moving any existing dotfiles from ~ to $olddir"
 for file in $files; do
-    if [ -f ~/.$file ]; then # Check if file exists in home
-        echo -n "Moving old $file to $olddir..."
-        mv ~/.$file $olddir
-        echo "done"
-    fi
+    echo -n "Moving old $file to $olddir..."
+    mv ~/.$file $olddir
+    echo "done"
 
     echo -n "Creating symlink to $file in home directory..."
     ln -s $dir/$file ~/.$file
