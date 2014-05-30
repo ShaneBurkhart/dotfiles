@@ -1,5 +1,3 @@
-source ~/.bashrc
-
 alias ls='ls -G --color'
 alias grep='GREP_COLOR="1;37;41" LANG=C grep --color=auto'
 alias pgrep='ps aux | grep'
