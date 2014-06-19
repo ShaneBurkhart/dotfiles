@@ -2,6 +2,23 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+alias tmux-env='eval `/nail/scripts/tmux-env`'
+
+tmux-env
+
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+    export TERM='xterm-256color'
+else
+    export TERM='xterm-color'
+fi
+
+function test {
+    test_path=$(echo $1 | tr "/" "\.")
+    test_path=${test_path%.py}
+    echo "Running Test: $test_path"
+    testify $test_path -x disabled -x sandbox-disabled
+}
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 

@@ -1,7 +1,7 @@
 source ~/.vim/bundles.vim " Load bundles
 
 " Junk for allowing 256 colors
-set term=builtin_xterm
+set term=xterm-256color
 set t_Co=256
 
 " Colors I like!
@@ -16,11 +16,11 @@ hi MatchParen cterm=bold ctermbg=none ctermfg=31
 
 " Junk to set up the autoindent!
 " === MINE ===
-set softtabstop=2
-set shiftwidth=2
+"set softtabstop=2
+"set shiftwidth=2
 " === YELP ===
-"set softtabstop=4
-"set shiftwidth=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 filetype indent on
 
@@ -33,6 +33,8 @@ set wildmode=list:longest,full
 
 " Remap semicolon to be colon, so it is easier to do vim commands.
 nore ; :
+
+set mouse=a
 
 " Set the scrolling to be more fluid and show more
 set sidescrolloff=5
@@ -101,4 +103,3 @@ au BufNewFile,BufRead *.md setlocal linebreak
 
 " Load plugin config
 source ~/.vim/plugins.vim
-

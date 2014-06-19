@@ -7,6 +7,7 @@ vmap <leader><space> :call NERDComment(0, "invert")<cr>
 " <comma><comma> opens search
 let g:ctrlp_map = '<leader>,'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_regexp = 1
 
 let g:ctrlp_max_files=0
 let g:ctrlp_user_command = "find %s -type f | egrep -v '(/\.(git|hg|svn)|\.(solr|tmp|pyc)$)'"

@@ -1,5 +1,6 @@
 [alias]
 	s = status
+        st = stash
 	a = add -A
 	ca = commit -a -m
 	c = commit -m
