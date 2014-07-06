@@ -16,6 +16,8 @@ Plugin 'gmarik/Vundle.vim.git'
 Plugin 'ShaneBurkhart/StatusLinePlus'
 Plugin 'ShaneBurkhart/WhiteSpaceRemover'
 Plugin 'ShaneBurkhart/TabComplete'
+Plugin 'ShaneBurkhart/EasyVimrcEdit'
+Plugin 'ShaneBurkhart/CursorLine'
 
 " ======== File Management =========
 " Search for files -- <comma><comma> -- Have to set that up
