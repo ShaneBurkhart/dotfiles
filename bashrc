@@ -3,6 +3,7 @@
 # for examples
 
 alias tmux-env='eval `/nail/scripts/tmux-env`'
+alias tmux='tmux -2'
 
 tmux-env
 
