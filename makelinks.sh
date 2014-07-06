@@ -48,9 +48,9 @@ for file in $files; do
     echo "done"
 done
 
-if [ -d "$dir/vim/bundle/vundle" ]; then
-  echo -n "Vundle exists, removing..."
-  rm "$dir/vim/bundle/vundle" -rf
+if [ -d "$dir/vim/bundle" ]; then
+  echo -n "Bundle dir exists, removing..."
+  rm "$dir/vim/bundle" -rf
   echo "done"
 fi
 
