@@ -13,6 +13,9 @@ Plugin 'gmarik/Vundle.vim.git'
 
 " ======= MY PLUGINS ==============
 
+Plugin 'ShaneBurkhart/StatusLinePlus'
+Plugin 'ShaneBurkhart/WhiteSpaceRemover'
+
 " ======== File Management =========
 " Search for files -- <comma><comma> -- Have to set that up
 Plugin 'kien/ctrlp.vim'
