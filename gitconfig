@@ -8,6 +8,7 @@
         b = branch
 	co = checkout
 	cob = checkout -b
+	ph = push origin HEAD
 [color]
 	ui = auto
 [user]
