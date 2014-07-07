@@ -34,10 +34,3 @@ let g:ctrlp_clear_cache_on_exit = 1
 cal ctrlp#clra()
 
 let g:ctrlp_max_height = 40
-
-
-" Rspec.vim mappings
-" map <leader>t :call RunCurrentSpecFile()<CR>
-" map <leader>s :call RunNearestSpec()<CR>
-" map <leader>l :call RunLastSpec()<CR>
-" map <leader>a :call RunAllSpecs()<CR>
