@@ -3,16 +3,13 @@
 # for examples
 
 alias tmux-env='eval `/nail/scripts/tmux-env`'
+alias tmux="tmux -2"
 
 tmux-env
 
-if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-    export TERM='xterm-256color'
-else
-    export TERM='xterm-color'
-fi
+export TERM='xterm-color'
 
-function test {
+function ptest {
     test_path=$(echo $1 | tr "/" "\.")
     test_path=${test_path%.py}
     echo "Running Test: $test_path"
@@ -124,8 +121,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-source ~/.bash_profile
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
