@@ -1,7 +1,7 @@
 source ~/.vim/bundles.vim " Load bundles
 
 " Junk for allowing 256 colors
-set term=xterm-256color
+set term=screen-256color
 set t_Co=256
 
 " Colors I like!
