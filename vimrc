@@ -18,6 +18,9 @@ nnoremap J <C-w>h
 nnoremap K <C-w>l
 nnoremap L <C-w>k
 
+"Tab switching
+nmap <leader>n :tabn<CR>
+
 
 "=========== Colors ============
 set t_Co=256
@@ -67,10 +70,10 @@ set directory=./.backup,/tmp
 
 
 "=========== Yelp ============
-"set softtabstop=4
-"set shiftwidth=4
+set softtabstop=4
+set shiftwidth=4
 
-"set tags=./tags;/
+set tags=./tags;/
 
 
 source ~/.vim/plugins.vim
