@@ -10,7 +10,8 @@ alias ls='ls --color=auto'
 
 
 # Adding things to my path
-export PATH=$PATH:$HOME/.rvm/bin
+export PATH=.:$PATH
+export PATH=$HOME/.rvm/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 
 

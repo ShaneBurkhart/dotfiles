@@ -29,8 +29,8 @@ nmap <leader>m :CtrlPBufTag<cr>
 nmap <leader>M :CtrlPBufTagAll<cr>
 
 let g:ctrlp_clear_cache_on_exit = 1
-" ctrlp leaves stale caches behind if there is another vim process runnin
-" which didn't use ctrlp. so we clear all caches on each new vim invocation
-cal ctrlp#clra()
+if exists(":CtrlPClearCache")
+  cal :CtrlPClearCache
+endif
 
 let g:ctrlp_max_height = 40
