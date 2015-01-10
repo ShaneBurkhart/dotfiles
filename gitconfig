@@ -1,7 +1,7 @@
 [alias]
 	s = status
         st = stash
-	a = add -A
+	a = add -A .
 	ca = commit -a -m
 	c = commit -m
 	d = diff

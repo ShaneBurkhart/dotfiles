@@ -32,3 +32,6 @@ NO_COLOR="\[\033[0m\]"
 
 
 export PS1="$GREEN\u@\h$BLUE:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=/root/go
+export PATH=$PATH:$GOPATH/bin
