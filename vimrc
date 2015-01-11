@@ -53,8 +53,8 @@ set directory=./.backup,/tmp
 
 
 "=========== Yelp ============
-"set softtabstop=4
-"set shiftwidth=4
+set softtabstop=4
+set shiftwidth=4
 
 
 source ~/.vim/plugins.vim
