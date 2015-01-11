@@ -9,18 +9,6 @@ nore ; :
 inoremap jj <Esc>
 inoremap jJ <Esc>
 
-"Code jump back
-nnoremap <C-[> <C-t>
-
-"Window switching
-nnoremap H <C-w>j
-nnoremap J <C-w>h
-nnoremap K <C-w>l
-nnoremap L <C-w>k
-
-"Tab switching
-nmap <leader>n :tabn<CR>
-
 
 "=========== Colors ============
 set t_Co=256
@@ -49,11 +37,6 @@ au BufNewFile,BufRead *.md setlocal linebreak
 "=========== Misc ============
 set number
 
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-filetype indent on
-
 set sidescrolloff=5
 set scrolloff=5
 
@@ -72,8 +55,6 @@ set directory=./.backup,/tmp
 "=========== Yelp ============
 "set softtabstop=4
 "set shiftwidth=4
-
-"set tags=./tags;/
 
 
 source ~/.vim/plugins.vim
