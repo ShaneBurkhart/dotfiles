@@ -1,9 +1,4 @@
 # Aliases
-if [ -e '/nail/scripts/tmux-env' ]; then
-    alias tmux-env='eval `/nail/scripts/tmux-env`'
-    # Calling command to forward tmux.  Yelp.
-    tmux-env
-fi
 alias tmux="tmux -2"
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
@@ -11,8 +6,6 @@ alias ls='ls --color=auto'
 
 # Adding things to my path
 export PATH=.:$PATH
-export PATH=$HOME/.rvm/bin:$PATH
-export PATH="/usr/local/heroku/bin:$PATH"
 
 
 # System settings
@@ -32,6 +25,3 @@ NO_COLOR="\[\033[0m\]"
 
 
 export PS1="$GREEN\u@\h$BLUE:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=/root/go
-export PATH=$PATH:$GOPATH/bin

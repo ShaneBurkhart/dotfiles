@@ -11,7 +11,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim.git'
 
 " ======= Golang =========
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 
 " ======= MY PLUGINS ==============
 Plugin 'ShaneBurkhart/StatusLinePlus'

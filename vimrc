@@ -20,6 +20,7 @@ set term=screen-256color
 if(!exists("g:colors_name") || g:colors_name != 'molokai')
   colorscheme molokai
 endif
+syntax enable
 
 "Makes the background match the terminal background.  Allows transparency.
 hi Normal ctermbg=NONE
@@ -52,9 +53,8 @@ set backupdir=./.backup,/tmp
 set directory=./.backup,/tmp
 
 
-"=========== Yelp ============
-"set softtabstop=4
-"set shiftwidth=4
+set softtabstop=4
+set shiftwidth=4
 
 
 source ~/.vim/plugins.vim
