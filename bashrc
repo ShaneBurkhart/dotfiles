@@ -17,6 +17,12 @@ export TERM='xterm-color'
 source ~/.bash_functions
 
 
+# Load git autocomplete script
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
+
 # Stuff to make the prompt more pleasing
 RED="\[\033[0;31m\]"
 RED_BOLD="\[\033[1;31m\]"
