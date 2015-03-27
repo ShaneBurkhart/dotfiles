@@ -55,6 +55,8 @@ set directory=./.backup,/tmp
 
 set softtabstop=4
 set shiftwidth=4
+" Custom indentation for certain file types
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2
 
 
 source ~/.vim/plugins.vim
