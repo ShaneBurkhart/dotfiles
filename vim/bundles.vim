@@ -18,6 +18,7 @@ Plugin 'ShaneBurkhart/StatusLinePlus'
 Plugin 'ShaneBurkhart/WhiteSpaceRemover'
 Plugin 'ShaneBurkhart/EasyVimrcEdit'
 Plugin 'ShaneBurkhart/CursorLine'
+Plugin 'ShaneBurkhart/TabComplete'
 
 " ======== Autocomplete =========
 " Smart commenting -- <comma><c><space> toggles comments

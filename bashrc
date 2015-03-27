@@ -6,6 +6,7 @@ alias ls='ls --color=auto'
 
 # Adding things to my path
 export PATH=.:$PATH
+export PATH=${GEM_HOME}/bin:$PATH
 
 
 # System settings
