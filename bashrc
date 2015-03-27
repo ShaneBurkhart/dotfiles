@@ -18,10 +18,17 @@ source ~/.bash_functions
 
 # Stuff to make the prompt more pleasing
 RED="\[\033[0;31m\]"
-YELLOW="\[\033[0;33m\]"
+RED_BOLD="\[\033[1;31m\]"
 GREEN="\[\033[0;32m\]"
-BLUE="\[\033[0;36m\]"
+GREEN_BOLD="\[\033[1;32m\]"
+YELLOW="\[\033[0;33m\]"
+YELLOW_BOLD="\[\033[1;33m\]"
+BLUE="\[\033[0;34m\]"
+BLUE_BOLD="\[\033[1;34m\]"
+MAGENTA="\[\033[0;35m\]"
+MAGENTA_BOLD="\[\033[1;35m\]"
+CYAN_BOLD="\[\033[1;36m\]"
 NO_COLOR="\[\033[0m\]"
 
 
-export PS1="$GREEN\u@\h$BLUE:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+export PS1="$MAGENTA_BOLD\u@\h$CYAN_BOLD:\w$YELLOW_BOLD\$(parse_git_branch)$NO_COLOR\$ "
