@@ -11,12 +11,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim.git'
 
 " ======= Golang =========
-"Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 
 " ======= MY PLUGINS ==============
 Plugin 'ShaneBurkhart/StatusLinePlus'
 Plugin 'ShaneBurkhart/WhiteSpaceRemover'
-Plugin 'ShaneBurkhart/EasyVimrcEdit'
 Plugin 'ShaneBurkhart/CursorLine'
 Plugin 'ShaneBurkhart/TabComplete'
 
@@ -36,10 +35,10 @@ Plugin 'airblade/vim-gitgutter'
 
 " ======== Syntax Specific =========
 " handlebars syntax highlighting
-Plugin 'nono/vim-handlebars'
+"Plugin 'nono/vim-handlebars'
 
 " markdown
-Plugin 'plasticboy/vim-markdown'
+"Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()
 filetype plugin indent on     " required!

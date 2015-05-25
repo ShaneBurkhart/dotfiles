@@ -2,11 +2,16 @@
 alias tmux="tmux -2"
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
+alias xclip='xclip -i -selection clipboard'
+
+
+# Env vars
 
 
 # Adding things to my path
 export PATH=.:$PATH
 export PATH=${GEM_HOME}/bin:$PATH
+export PATH=/usr/local/go/bin:$PATH
 
 
 # System settings

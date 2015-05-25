@@ -9,6 +9,9 @@ nore ; :
 inoremap jj <Esc>
 inoremap jJ <Esc>
 
+" Shortcut to edit vimrc
+nmap <leader>vimrc :vnew ~/.vimrc<cr>
+
 
 "=========== Colors ============
 set t_Co=256
@@ -38,7 +41,6 @@ au BufNewFile,BufRead *.md setlocal linebreak
 "=========== Misc ============
 set number
 
-set sidescrolloff=5
 set scrolloff=5
 
 set nofoldenable
@@ -47,16 +49,22 @@ let g:vim_markdown_folding_disabled=1
 "Vim command autocomplete
 set wildmenu
 set wildmode=list:longest,full
+set wildignore+=node_modules/*
 
 "Move backup files
 set backupdir=./.backup,/tmp
 set directory=./.backup,/tmp
 
-
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set expandtab
 " Custom indentation for certain file types
-autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType go setlocal tabstop=8 shiftwidth=8 softtabstop=8 noexpandtab
+
+" Netrw file explorer
+let g:netrw_liststyle=3
 
 
 source ~/.vim/plugins.vim
