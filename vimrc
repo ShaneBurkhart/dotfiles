@@ -46,6 +46,8 @@ set scrolloff=5
 set nofoldenable
 let g:vim_markdown_folding_disabled=1
 
+let g:netrw_liststyle=3
+
 "Vim command autocomplete
 set wildmenu
 set wildmode=list:longest,full

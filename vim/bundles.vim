@@ -36,6 +36,8 @@ Plugin 'airblade/vim-gitgutter'
 " ======== Syntax Specific =========
 " handlebars syntax highlighting
 "Plugin 'nono/vim-handlebars'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
 
 " markdown
 "Plugin 'plasticboy/vim-markdown'
