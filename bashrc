@@ -14,10 +14,6 @@ export PATH=${GEM_HOME}/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
 
 
-# System settings
-export TERM='xterm-color'
-
-
 # Load custom functions
 source ~/.bash_functions
 

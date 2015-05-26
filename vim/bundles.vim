@@ -39,6 +39,10 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 
+" ======== Syntax Specific =========
+" Color schemes
+Plugin 'flazz/vim-colorschemes'
+
 " markdown
 "Plugin 'plasticboy/vim-markdown'
 

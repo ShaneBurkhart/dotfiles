@@ -15,22 +15,13 @@ nmap <leader>vimrc :vnew ~/.vimrc<cr>
 
 "=========== Colors ============
 set t_Co=256
-set term=screen-256color
 
-"Only load the colors if it isn't currently loaded. This was messing up the
-"colors for the statusline. The molokai clears all highlights so when this
-"file is sourced, it removes statusline colors.
-if(!exists("g:colors_name") || g:colors_name != 'molokai')
-  colorscheme molokai
-endif
 syntax enable
-
-"Makes the background match the terminal background.  Allows transparency.
-hi Normal ctermbg=NONE
-hi nonText ctermbg=NONE
-
-"Makes matching parenthesis more visable
-hi MatchParen cterm=bold ctermbg=none ctermfg=31
+set background=dark
+let g:gruvbox_italic=0
+if(!exists("g:colors_name") || g:colors_name != 'gruvbox')
+  colorscheme gruvbox
+endif
 
 
 "=========== Auto ============
