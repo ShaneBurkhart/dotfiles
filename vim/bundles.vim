@@ -43,6 +43,10 @@ Plugin 'pangloss/vim-javascript'
 " Color schemes
 Plugin 'flazz/vim-colorschemes'
 
+" ======== File Finder =========
+"Search for files -- <comma><comma> -- Have to set that up
+Plugin 'kien/ctrlp.vim'
+
 " markdown
 "Plugin 'plasticboy/vim-markdown'
 
