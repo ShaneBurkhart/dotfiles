@@ -1,7 +1,7 @@
 # Aliases
 alias tmux="tmux -2"
 alias grep='grep --color=auto'
-alias ls='ls --color=auto'
+alias ls='ls -G'
 alias xclip='xclip -i -selection clipboard'
 
 
@@ -40,3 +40,5 @@ NO_COLOR="\[\033[0m\]"
 
 
 export PS1="$MAGENTA_BOLD\u@\h$CYAN_BOLD:\w$YELLOW_BOLD\$(parse_git_branch)$NO_COLOR\$ "
+
+export LSCOLORS=gxfxcxdxbxegedabagacad

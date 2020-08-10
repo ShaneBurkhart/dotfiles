@@ -13,6 +13,11 @@ Plugin 'gmarik/Vundle.vim.git'
 " ======= Golang =========
 Plugin 'fatih/vim-go'
 
+" ======= TypeScript =========
+Plugin 'leafgarland/typescript-vim'
+
+Plugin 'digitaltoad/vim-pug'
+
 " ======= MY PLUGINS ==============
 Plugin 'ShaneBurkhart/StatusLinePlus'
 Plugin 'ShaneBurkhart/WhiteSpaceRemover'
